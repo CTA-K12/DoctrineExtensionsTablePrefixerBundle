@@ -1,0 +1,15 @@
+parameters:
+#    mesd_doctrine_extensions_table_prefixer.example.class: MESD\DoctrineExtensions\TablePrefixerBundle\Example
+    mesd_doctrine_extensions_table_prefixer.table_prefix.class: MESD\DoctrineExtensions\TablePrefixerBundle\Subscriber\TablePrefixSubscriber
+
+
+services:
+#    mesd_doctrine_extensions_table_prefixer.example:
+#        class: %mesd_doctrine_extensions_table_prefixer.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
+    mesd_doctrine_extensions_table_prefixer.tblprefix_subscriber:
+        class: %mesd_doctrine_extensions_table_prefixer.table_prefix.class%
+        arguments: [@service_container]
+        # [%mesd_doctrine_extensions_table_prefixer.db.table_prefix%]
+        tags:
+            - { name: doctrine.event_subscriber }

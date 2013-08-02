@@ -1,0 +1,10 @@
+{
+    "name": "mesd/doctrine-extensions-table-prefixer-bundle",
+    "license": "MIT",
+    "type": "symfony-bundle",
+    "description": "Doctrine Extensions Table Prefixer bundle",
+    "autoload": {
+        "psr-0": { "MESD\\DoctrineExtensions\\TablePrefixerBundle": "" }
+    },
+    "target-dir": "MESD/DoctrineExtensions/TablePrefixerBundle"
+}
