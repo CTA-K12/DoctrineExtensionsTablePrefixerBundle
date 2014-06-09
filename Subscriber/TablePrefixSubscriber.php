@@ -1,5 +1,5 @@
 <?php
-namespace MESD\DoctrineExtensions\TablePrefixerBundle\Subscriber;
+namespace Mesd\DoctrineExtensions\TablePrefixerBundle\Subscriber;
 
 use Doctrine\ORM\Event\LoadClassMetadataEventArgs;
 use Doctrine\ORM\Event\LifecycleEventArgs;

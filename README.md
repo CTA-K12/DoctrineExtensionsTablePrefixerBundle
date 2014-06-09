@@ -92,7 +92,7 @@ Also register in the AppKernel.php, e.g.:
 
         ...
 
-            new MESD\DoctrineExtensions\TablePrefixerBundle\MESDDoctrineExtensionsTablePrefixerBundle(),
+            new Mesd\DoctrineExtensions\TablePrefixerBundle\MesdDoctrineExtensionsTablePrefixerBundle(),
 
         ...
 

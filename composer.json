@@ -4,7 +4,7 @@
     "type": "symfony-bundle",
     "description": "Doctrine Extensions Table Prefixer bundle",
     "autoload": {
-        "psr-0": { "MESD\\DoctrineExtensions\\TablePrefixerBundle": "" }
+        "psr-0": { "Mesd\\DoctrineExtensions\\TablePrefixerBundle": "" }
     },
-    "target-dir": "MESD/DoctrineExtensions/TablePrefixerBundle"
+    "target-dir": "Mesd/DoctrineExtensions/TablePrefixerBundle"
 }

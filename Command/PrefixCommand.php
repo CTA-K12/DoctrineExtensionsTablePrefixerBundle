@@ -1,5 +1,5 @@
 <?php
-namespace MESD\DoctrineExtensions\TablePrefixerBundle\Command;
+namespace Mesd\DoctrineExtensions\TablePrefixerBundle\Command;
 
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
@@ -14,17 +14,6 @@ class PrefixCommand extends ContainerAwareCommand
         $this
         ->setName( 'mesd:prefix' )
         ->setDescription( 'Show configured prefixes' )
-        // ->addArgument(
-        //     'name',
-        //     InputArgument::OPTIONAL,
-        //     'Who do you want to greet?'
-        // )
-        // ->addOption(
-        //    'yell',
-        //    null,
-        //    InputOption::VALUE_NONE,
-        //    'If set, the task will yell in uppercase letters'
-        // )
         ;
     }
 

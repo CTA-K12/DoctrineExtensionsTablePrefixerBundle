@@ -1,6 +1,6 @@
 parameters:
-#    mesd_doctrine_extensions_table_prefixer.example.class: MESD\DoctrineExtensions\TablePrefixerBundle\Example
-    mesd_doctrine_extensions_table_prefixer.table_prefix.class: MESD\DoctrineExtensions\TablePrefixerBundle\Subscriber\TablePrefixSubscriber
+#    mesd_doctrine_extensions_table_prefixer.example.class: Mesd\DoctrineExtensions\TablePrefixerBundle\Example
+    mesd_doctrine_extensions_table_prefixer.table_prefix.class: Mesd\DoctrineExtensions\TablePrefixerBundle\Subscriber\TablePrefixSubscriber
 
 
 services:
