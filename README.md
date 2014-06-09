@@ -4,34 +4,24 @@ The table prefixer reads the bundle's config file to add prefixes and schema to
 the beginning of doctrine table names.  Prefixes are add to raw table names so
 if prefix is set to 'prefix\_'
 
-.. code-block:: bash
-
     object
     schema.object
 
 become
-
-.. code-block:: bash
 
     prefix_student
     schema.prefix_student
 
 Schema are added before table names so
 
-.. code-block:: bash
-
     object
 
 
 becomes
 
-.. code-block:: html
-
     schema.object
 
 The prefixes and schema are configured in config.yml:
-
-.. code-block:: yaml
 
     mesd_doctrine_extensions_table_prefixer:
         prefixed_bundles:
@@ -57,8 +47,6 @@ unless tilde is specified.
 
 A special default schema of blank will remove any bundle-specific schema.
 
-.. code-block:: yaml
-
     mesd_doctrine_extensions_table_prefixer:
         prefixed_bundles:
             default:
@@ -74,19 +62,13 @@ A special default schema of blank will remove any bundle-specific schema.
 
 Leads to
 
-.. code-block:: bash
-
     bundle_schema.object
 
 becoming
 
-.. code-block:: bash
-
     object
 
 A good way to test prefixes is:
-
-.. code-block:: bash
 
     app/console doctrine:schema:update --dump-sql
 
@@ -96,8 +78,6 @@ TablePrefixer Bundle Install and Config
 
 Include code for bandcamp require in composer.json:
 
-.. code-block:: js
-
     "require": {
     ...
         "mesd/bandcamp": "dev-master",
@@ -105,8 +85,6 @@ Include code for bandcamp require in composer.json:
     },
 
 Also register in the AppKernel.php, e.g.:
-
-.. code-block:: php
 
     public function registerBundles()
     {
